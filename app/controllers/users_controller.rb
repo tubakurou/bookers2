@@ -1,17 +1,15 @@
 class UsersController < ApplicationController
 
 def show
-
-  @books = Book.all
   @user = User.find(params[:id])
- @users = User.all
+   @books = @user.books
  end
 
 def create
-    book = book.new
-if  user.create(User_params)
+    @user = User.new
+if  user.save(User_params)
 
-    redirect_to "/books"
+    redirect_to users_path(user.id)
   else
     render :show
   end
