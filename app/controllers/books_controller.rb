@@ -49,7 +49,7 @@ end
      def destroy
     @book = Book.find(params[:id])
    if @book.destroy
-    redirect_to books_path(book.id)
+    redirect_to books_path
   end
  end
 end

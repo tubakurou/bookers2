@@ -1681,8 +1681,7 @@ Failures:
       [36m#                  profile_image_url[0m
       [36m#   /home/ec2-user/.rvm/gems/ruby-2.6.3/bundler/gems/refile-46b4178654e6/lib/refile/attacher.rb:168:in `read'[0m
 
-  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
-      [31mFailure/Error: [0m<[31m[1;31m%=[0m[31m attachment_image_tag user, :profile_image, :fill, 60, 60, format: 'jpeg', fallback: "no_image.jpg" %>[0m[0m
+  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 tgitser, :profile_image, :fill, 60, 60, format: 'jpeg', fallback: "no_image.jpg" %>[0m[0m
       [31m[0m
       [31mActionView::Template::Error:[0m
       [31m  undefined method `profile_image_id' for #<User:0x000000000a4a1a00>[0m
