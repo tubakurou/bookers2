@@ -1,5 +1,5 @@
 
-  <%= render 'users/list', user: @user %>
+  <%= render 'users/list', user: current_user %>
   
       <div class="col-md-8 offset-md-1">
       <h2>Users</h2>
@@ -15,7 +15,7 @@
         <tbody>
           <% @users.each do |user| %>
         <tr>
-        <td><%= attachment_image_tag user, :profile_image, size:"40x40", format: 'jpeg', fallback: "no_image_user.jpg" %></td>
+        <td><%= attachment_image_tag user,:profile_image, size:"40x40", format: 'jpeg', fallback: "no_image_user.jpg" %></td>
          <td><%= user.name %></td>
         <td><%= link_to "show", user_path(user.id) %></td>
         </tr>
