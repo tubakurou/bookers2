@@ -48,7 +48,7 @@
 
       <li>
         <%= link_to destroy_user_session_path, method: :delete do %>
-          <i class="fas fa-home nav-link text-light"> Log out</i>
+          <i class="fas fa-sign-out-alt nav-link text-light"> Log out</i>
 
       <% end %>
       </li>
@@ -62,7 +62,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
 
-  <%= link_to new_user_session_path do %>
+  <%= link_to "/" do %>
       <i class="fas fa-home nav-link text-light"> Home</i>
       <% end %>
       <li>
@@ -91,7 +91,16 @@
 <% flash.each do |key, value| %>
     <%= content_tag(:div, value, class: "#{key}") %>
   <% end %>
-
+<div class="container mt-5">
     <%= yield %>
+    <footer>
+    <div class="row">
+  <div class="mx-auto">
+  <p>CopyRight Infratop.inc</p>
+  </div>
+  </div>
+  </div>
+  
+  </footer>
   </body>
 </html>

@@ -13,9 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+.footer {
+  background: #999;
+  color: white;
+  padding: 5rem 0;
+}
 td {
     display: table-cell;
     vertical-align: inherit;
@@ -97,4 +104,7 @@ label {
 }
 div.field, div.actions {
     margin-bottom: 10px
+}
+.mt-5, .my-5 {
+    margin-top: 3rem !important;
 }
